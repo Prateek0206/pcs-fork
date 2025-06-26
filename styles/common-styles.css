@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+:root {
+  font-size: 16px;
+  --roboto: "Roboto";
+}
+
+body {
+  background-color: rgb(252, 250, 249);
+  width: 100vw;
+}
+
+svg {
+  height: clamp(1rem, 2.2vh, 3rem);
+  width: clamp(1rem, 2.2vw, 2rem);
+}
+.main-container {
+  width: 100%;
+  max-width: 120rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.quick-links {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+  background-color: #113560;
+  padding: 0.6rem 0;
+}
+
+.quick-links > * {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0.8rem 1rem;
+  border: none;
+  background-color: inherit;
+  transition: all 0.1s ease-in-out;
+  font-size: clamp(0.2rem, 1vw, 3rem);
+}
+
+.quick-links > * a:link,
+.quick-links > * a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+.quick-links > *:hover {
+  background-color: black;
+  border-radius: 0.4rem;
+}
+
+.apply-button {
+  position: relative;
+}
+.apply-button::after {
+  content: "";
+  background-color: aliceblue;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  height: 1px;
+  width: 0%;
+  transition: all 0.2s ease-in-out;
+  margin-bottom: 2px;
+}
+
+.apply-button:hover::after {
+  width: 100%;
+}
+
+.site-logo {
+  line-height: 0;
+  padding: 1rem;
+  margin: 1rem;
+  font-family: var(--roboto), system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.site-logo h1 {
+  font-size: clamp(1.2rem, 2.8vw, 5rem);
+  text-transform: uppercase;
+  font-weight: 900;
+  color: #044ba0;
+}
+
+.site-logo p {
+  font-weight: 700;
+  color: rgb(228, 3, 3);
+  text-align: start;
+  letter-spacing: 0.1rem;
+}
+
+.site-logo a {
+  position: relative;
+}
+.site-logo a::after {
+  content: "";
+  background-color: red;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  height: 2px;
+  width: 0%;
+  transition: all 0.2s ease-in-out;
+  margin-bottom: 2px;
+}
+
+.site-logo a:hover::after {
+  width: 100%;
+}
+
+/*Nav Bar*/
+
+.nav-bar {
+  width: 98%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 4rem;
+  padding: 0 3rem;
+  margin: 1.4rem 0 0 0;
+  border-radius: clamp(.2rem, 1.2vw, 3rem);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.173);
+}
+
+.nav-bar ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: #000;
+  width: 100%;
+  height: 100%;
+}
+
+.nav-bar ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 0.1rem;
+  height: 100%;
+  transition: all .2s ease-in-out;
+  cursor: pointer;
+}
+
+.nav-bar ul li a:link,
+.nav-bar ul li a:visited {
+  color: #000;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.nav-bar ul li:hover{
+    transform: translateY(-.5rem);
+}
