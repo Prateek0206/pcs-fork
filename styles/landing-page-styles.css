@@ -1,0 +1,71 @@
+/*Carousel*/
+
+.carousel {
+  width: 99vw;
+  height: 40rem;
+  max-height: 50rem;
+  margin: min(4rem, 12%) 0;
+  position: relative;
+  display: flex;
+  overflow: none;
+}
+
+.slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  min-width: 100%;
+  transition: opacity .3s ease-in-out;
+  transition-delay: 3   00ms;
+}
+
+.slide[data-active] {
+  opacity: 1;
+  transition-delay: 100ms;
+}
+.slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 1rem;
+}
+
+.carousel button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 100;
+  height: 8%;
+  aspect-ratio: 1/1;
+  background-color: rgb(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in;
+}
+
+.carousel button svg {
+  height: 100%;
+  width: 100%;
+  padding: 0.2rem;
+  margin: 0 auto;
+}
+
+.carousel button:hover {
+  background-color: rgb(0, 0, 0, 1);
+}
+
+.carousel button:focus,
+.carousel button:active {
+  outline: 1px solid black;
+}
+
+.prev {
+  left: 1rem;
+}
+
+.next {
+  right: 1rem;
+}

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles/normalize.css" type="text/css" />
     <link rel="stylesheet" href="styles/common-styles.css" />
     <link rel="stylesheet" href="styles/landing-page-styles.css" />
+    <script src="scripts/carousel.js" defer></script>
   </head>
   <body>
     <div class="main-container">
@@ -30,6 +31,7 @@
             >Email</a
           >
         </span>
+
         <span class="locate-us">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -42,7 +44,6 @@
               d="m600-120-240-84-186 72q-20 8-37-4.5T120-170v-560q0-13 7.5-23t20.5-15l212-72 240 84 186-72q20-8 37 4.5t17 33.5v560q0 13-7.5 23T812-192l-212 72Zm-40-98v-468l-160-56v468l160 56Zm80 0 120-40v-474l-120 46v468Zm-440-10 120-46v-468l-120 40v474Zm440-458v468-468Zm-320-56v468-468Z"
             />
           </svg>
-
           <a
             href="https://maps.app.goo.gl/A99x264HY8Fx2tgv9"
             target="_blank"
@@ -69,125 +70,6 @@
         </button>
       </div>
 
-      <nav class="nav-bar">
-        <ul style="list-style: none; padding-left: 0">
-          <li>
-            <a href="#">About us</a
-            ><svg
-              xmlns="http://www.w3.org/2000/svg"
-              height="24px"
-              viewBox="0 -960 960 960"
-              width="24px"
-              fill="#000"
-            >
-              <path d="M480-360 280-560h400L480-360Z" />
-            </svg>
-          </li>
-          <li>
-            <a href="#">Acadameics</a
-            ><svg
-              xmlns="http://www.w3.org/2000/svg"
-              height="24px"
-              viewBox="0 -960 960 960"
-              width="24px"
-              fill="#000"
-            >
-              <path d="M480-360 280-560h400L480-360Z" />
-            </svg>
-          </li>
-          <li>
-            <a href="#">Beyond Curriculum</a
-            ><svg
-              xmlns="http://www.w3.org/2000/svg"
-              height="24px"
-              viewBox="0 -960 960 960"
-              width="24px"
-              fill="#000"
-            >
-              <path d="M480-360 280-560h400L480-360Z" />
-            </svg>
-          </li>
-          <li>
-            <a href="#">Gallery</a
-            ><svg
-              xmlns="http://www.w3.org/2000/svg"
-              height="24px"
-              viewBox="0 -960 960 960"
-              width="24px"
-              fill="#000"
-            >
-              <path d="M480-360 280-560h400L480-360Z" />
-            </svg>
-          </li>
-          <li>
-            <a href="#">Events</a
-            ><svg
-              xmlns="http://www.w3.org/2000/svg"
-              height="24px"
-              viewBox="0 -960 960 960"
-              width="24px"
-              fill="#000"
-            >
-              <path d="M480-360 280-560h400L480-360Z" />
-            </svg>
-          </li>
-          <li>
-            <a href="#">Admission</a
-            ><svg
-              xmlns="http://www.w3.org/2000/svg"
-              height="24px"
-              viewBox="0 -960 960 960"
-              width="24px"
-              fill="#000"
-            >
-              <path d="M480-360 280-560h400L480-360Z" />
-            </svg>
-          </li>
-          <li>
-            <a href="#">Mandetory public disclosure</a
-            ><svg
-              xmlns="http://www.w3.org/2000/svg"
-              height="16px"
-              viewBox="0 -960 960 960"
-              width="16px"
-              fill="#000"
-            >
-              <path
-                d="m243-240-51-51 405-405H240v-72h480v480h-72v-357L243-240Z"
-              />
-            </svg>
-          </li>
-          <li>
-            <a href="#">Contact us</a
-            ><svg
-              xmlns="http://www.w3.org/2000/svg"
-              height="16px"
-              viewBox="0 -960 960 960"
-              width="16px"
-              fill="#000"
-            >
-              <path
-                d="m243-240-51-51 405-405H240v-72h480v480h-72v-357L243-240Z"
-              />
-            </svg>
-          </li>
-          <li>
-            <a href="#">Results</a
-            ><svg
-              xmlns="http://www.w3.org/2000/svg"
-              height="16px"
-              viewBox="0 -960 960 960"
-              width="16px"
-              fill="#000"
-            >
-              <path
-                d="m243-240-51-51 405-405H240v-72h480v480h-72v-357L243-240Z"
-              />
-            </svg>
-          </li>
-        </ul>
-      </nav>
-
       <div class="site-logo">
         <h1>Pragati Concept School</h1>
         <p>
@@ -202,6 +84,214 @@
           New Delhi
         </p>
       </div>
+
+      <nav class="nav-bar">
+        <ul style="list-style: none; padding-left: 0">
+          <li class="has-dropdown">
+            <a href="#">About us</a>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#000"
+            >
+              <path d="M480-360 280-560h400L480-360Z" />
+            </svg>
+            <ul class="dropdown">
+              <li><a href="#">Our Story</a></li>
+              <li><a href="#">Vision & Mission</a></li>
+              <li><a href="#">Principal's Message</a></li>
+            </ul>
+          </li>
+
+          <li class="has-dropdown">
+            <a href="#">Academics</a>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#000"
+            >
+              <path d="M480-360 280-560h400L480-360Z" />
+            </svg>
+            <ul class="dropdown">
+              <li><a href="#">Curriculum</a></li>
+              <li><a href="#">Subjects Offered</a></li>
+              <li><a href="#">Faculty</a></li>
+              <li><a href="#">Assessment Policy</a></li>
+              <li><a href="#">Academic Calendar</a></li>
+            </ul>
+          </li>
+
+          <li class="has-dropdown">
+            <a href="#">Beyond Curriculum</a>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#000"
+            >
+              <path d="M480-360 280-560h400L480-360Z" />
+            </svg>
+            <ul class="dropdown">
+              <li><a href="#">Clubs & Houses</a></li>
+              <li><a href="#">Sports Activities</a></li>
+              <li><a href="#">Community Engagement</a></li>
+            </ul>
+          </li>
+
+          <li class="has-dropdown">
+            <a href="#">Gallery</a>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#000"
+            >
+              <path d="M480-360 280-560h400L480-360Z" />
+            </svg>
+            <ul class="dropdown">
+              <li><a href="#">Photo Gallery</a></li>
+              <li><a href="#">Video Highlights</a></li>
+              <li><a href="#">Student Projects</a></li>
+            </ul>
+          </li>
+
+          <li class="has-dropdown">
+            <a href="#">Events</a>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#000"
+            >
+              <path d="M480-360 280-560h400L480-360Z" />
+            </svg>
+            <ul class="dropdown">
+              <li><a href="#">Annual Day</a></li>
+              <li><a href="#">Science Exhibition</a></li>
+              <li><a href="#">Cultural Fest</a></li>
+              <li><a href="#">Workshops</a></li>
+              <li><a href="#">Seminars</a></li>
+            </ul>
+          </li>
+
+          <li class="has-dropdown">
+            <a href="#">Admission</a>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#000"
+            >
+              <path d="M480-360 280-560h400L480-360Z" />
+            </svg>
+            <ul class="dropdown">
+              <li><a href="#">Why Choose Us?</a></li>
+              <li><a href="#">Admission Process</a></li>
+              <li><a href="#">Fee Structure</a></li>
+              <li><a href="#">Apply Online</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="#">Mandatory Public Disclosure</a>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="16px"
+              viewBox="0 -960 960 960"
+              width="16px"
+              fill="#000"
+            >
+              <path
+                d="m243-240-51-51 405-405H240v-72h480v480h-72v-357L243-240Z"
+              />
+            </svg>
+          </li>
+
+          <li>
+            <a href="#">Contact us</a>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="16px"
+              viewBox="0 -960 960 960"
+              width="16px"
+              fill="#000"
+            >
+              <path
+                d="m243-240-51-51 405-405H240v-72h480v480h-72v-357L243-240Z"
+              />
+            </svg>
+          </li>
+
+          <li>
+            <a href="#">Results</a>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="16px"
+              viewBox="0 -960 960 960"
+              width="16px"
+              fill="#000"
+            >
+              <path
+                d="m243-240-51-51 405-405H240v-72h480v480h-72v-357L243-240Z"
+              />
+            </svg>
+          </li>
+        </ul>
+      </nav>
+
+      <section aria-label="carousel">
+        <div class="carousel" data-carousel>
+          <ul data-slides>
+            <li class="slide" data-active>
+              <img
+                src="images/wp11407418-minecraft-landscapes-wallpapers.jpg"
+                alt=""
+              />
+            </li>
+            <li class="slide">
+              <img src="images/wp5022399-minecraft-4k-wallpapers.png" alt="" />
+            </li>
+            <li class="slide">
+              <img
+                src="images/wp9092925-minecraft-landscapes-wallpapers.jpg"
+                alt=""
+              />
+            </li>
+            <li class="slide"><img src="images/uwp3415632.jpeg" alt="" /></li>
+          </ul>
+
+          <button class="prev" data-carousel-button="prev">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="20px"
+              viewBox="0 -960 960 960"
+              width="20px"
+              fill="#FFFFFF"
+            >
+              <path d="M576-240 336-480l240-240 51 51-189 189 189 189-51 51Z" />
+            </svg>
+          </button>
+          <button class="next" data-carousel-button="next">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="20px"
+              viewBox="0 -960 960 960"
+              width="20px"
+              fill="#FFFFFF"
+            >
+              <path d="M522-480 333-669l51-51 240 240-240 240-51-51 189-189Z" />
+            </svg>
+          </button>
+        </div>
+      </section>
     </div>
   </body>
 </html>
