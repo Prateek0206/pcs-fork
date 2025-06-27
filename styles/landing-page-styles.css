@@ -1,10 +1,9 @@
 /*Carousel*/
 
 .carousel {
-  width: 118rem;
-  min-width: 10rem;
-  height: 40rem;
-  max-height: 50rem;
+  width: 99vw;
+  min-height: 30rem;
+  max-height: 40rem;
   margin: min(4rem, 12%) 0;
   position: relative;
   display: flex;
@@ -83,7 +82,7 @@
 }
 .intro {
   flex: 0.6;
-  border: clamp(1px, 0.2vw, 3rem) solid #113560;
+  border: clamp(1px, 0.2vw, 0.4rem) solid #113560;
   padding: min(3rem, 4%);
   background-color: #113560;
   height: fit-content;
@@ -146,7 +145,7 @@ button[data-learn-more] a:hover::after {
 .notice-board {
   display: flex;
   flex: 0.4;
-  border: clamp(1px, 0.2vw, 3rem) solid #113560;
+  border: clamp(1px, 0.2vw, 0.4rem) solid #113560;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
