@@ -82,9 +82,9 @@
 }
 .intro {
   flex: 0.6;
-  border: clamp(1px, 0.2vw, 0.4rem) solid #113560;
+  border: clamp(1px, 0.2vw, 0.4rem) solid #17558f;
   padding: min(3rem, 4%);
-  background-color: #113560;
+  background-color: #17558f;
   height: fit-content;
   overflow: scroll;
 }
@@ -112,7 +112,7 @@ button[data-learn-more] {
 
 button[data-learn-more] a:link,
 button[data-learn-more] a:visited {
-  color: #113560;
+  color: #17558f;
   text-decoration: none;
   font-size: clamp(0.6rem, 1vw, 2.8rem);
   position: relative;
@@ -125,7 +125,7 @@ button[data-learn-more] a::after {
   position: absolute;
   bottom: 0;
   left: 0;
-  background-color: #113560;
+  background-color: #17558f;
   transition: width 0.2s ease-in-out;
 }
 
@@ -145,7 +145,7 @@ button[data-learn-more] a:hover::after {
 .notice-board {
   display: flex;
   flex: 0.4;
-  border: clamp(1px, 0.2vw, 0.4rem) solid #113560;
+  border: clamp(1px, 0.2vw, 0.4rem) solid #17558f;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
@@ -153,7 +153,7 @@ button[data-learn-more] a:hover::after {
   overflow: scroll;
 }
 .notice-board .header {
-  background-color: #113560;
+  background-color: #17558f;
   width: 100%;
   min-height: min(25%, 10rem);
   font-size: clamp(0.4rem, 3vw, 3.6rem);
@@ -167,7 +167,7 @@ button[data-learn-more] a:hover::after {
 }
 
 .notice-board .notice-title {
-  color: #113560;
+  color: #17558f;
   padding: min(1.6rem, 10%);
   flex: 0.7;
   font-size: clamp(0.2rem, 1.4vw, 2rem);
