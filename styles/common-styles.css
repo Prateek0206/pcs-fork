@@ -6,6 +6,7 @@
 
 html {
   scrollbar-width: 0;
+  scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar {
@@ -62,7 +63,7 @@ img {
   border: none;
   background-color: inherit;
   transition: all 0.1s ease-in-out;
-  font-size: clamp(.5rem, 1vw, 1rem);
+  font-size: clamp(0.5rem, 1vw, 1rem);
 }
 
 .quick-links > * a:link,
@@ -121,7 +122,7 @@ img {
 }
 
 .site-logo img {
-  object-fit:contain;
+  object-fit: contain;
   object-position: center;
   width: 16%;
   height: 100%;
@@ -130,14 +131,33 @@ img {
 /*Nav Bar*/
 
 .nav-bar {
+  position: sticky;
+  top: min(1rem, 10%);
+  background-color: #ffffff5f;
   width: 98%;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 4rem;
-  padding: 0 3rem;
-  border-radius: clamp(0.2rem, 1.2vw, 3rem);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.173);
+  height: clamp(2rem, 8vh, 8rem);
+  border-radius: clamp(0.6rem, 1.5vw, 5rem);
+  z-index: 100;
+}
+
+.nav-bar nav {
+  z-index: 100;
+  backdrop-filter: blur(0.625rem);
+  position: sticky;
+  top: min(1rem, 10%);
+  background-color: transparent;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 0 min(3rem, 8%);
+  border-radius: clamp(0.6rem, 1.5vw, 5rem);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.173), 0 0 6px rgba(0, 0, 0, 0.173),
+    0 0 10px rgba(0, 0, 0, 0.173);
 }
 
 .nav-bar ul {
@@ -157,7 +177,7 @@ img {
   height: 100%;
   transition: all 0.2s ease-in-out;
   cursor: pointer;
-  font-size: clamp(.6rem, 1vw, 1.4rem);
+  font-size: clamp(0.6rem, 1vw, 1.4rem);
 }
 
 .nav-bar ul li a:link,
