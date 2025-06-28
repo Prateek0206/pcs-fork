@@ -280,8 +280,8 @@ button[data-learn-more] a:hover::after {
 .secretary-image {
   display: flex;
   align-items: center;
-  height: 60%;
-  width: 20%;
+  width: 40%;
+  height: 70%;
 }
 .secretary-image img {
   height: 100%;
@@ -353,7 +353,7 @@ button[data-learn-more] a:hover::after {
   width: 100%;
 }
 
-section .parent-container {
+#info-cards .parent-container {
   width: 100%;
   height: 30rem;
   display: flex;
@@ -361,7 +361,7 @@ section .parent-container {
   justify-content: space-evenly;
 }
 
-.card {
+#info-cards .card {
   height: 80%;
   width: 20%;
   max-height: 28rem;
@@ -374,30 +374,30 @@ section .parent-container {
   align-items: center;
   justify-content: space-evenly;
   border-radius: clamp(4px, 0.6vw, 3rem);
-  transition: all .2s ease-in;
+  transition: all 0.2s ease-in;
 }
 
-.card:hover {
+#info-cards .card:hover {
   background-color: #0b3e6e;
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.28);
 }
 
-.card svg {
+#info-cards .card svg {
   height: 170%;
   width: 100%;
   fill: #ff8000;
 }
 
-.card button {
+#info-cards .card button {
   background-color: transparent;
-  border: clamp(1px, 0.2vh, 0.3rem) solid #fff;
+  border: clamp(1px, 0.1vh, 0.2rem) solid #fff;
   padding: min(2rem, 5%);
   font-weight: 500;
   border-radius: 0.2rem;
   font-size: clamp(2px, 1vw, 1.8rem);
 }
 
-.card button a:link,
+#info-cards .card button a:link,
 .card button a:visited {
   color: inherit;
   text-decoration: none;
@@ -405,7 +405,7 @@ section .parent-container {
   color: #ff8000;
 }
 
-.card button a::after {
+#info-cards .card button a::after {
   content: "";
   width: 0;
   height: clamp(0.5px, 0.05vw, 10px);
@@ -416,6 +416,127 @@ section .parent-container {
   transition: width 0.2s ease-in-out;
 }
 
-.card button a:hover::after {
+#info-cards .card button a:hover::after {
+  width: 100%;
+}
+
+.quote-gap {
+  width: 100%;
+  height: 16rem;
+  background-color: #e7f4f6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quote {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+  height: 100%;
+  color: #28292a;
+  font-size: clamp(4px, 1.4vw, 1.6rem);
+}
+.quote blockquote {
+  text-align: center;
+  font-weight: 500;
+}
+
+.quote figcaption {
+  font-weight: 300;
+  width: 80%;
+  text-align: right;
+}
+
+.blog {
+  height: 100dvh;
+  max-height: 60rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.blog h2 {
+  font-weight: 200;
+  text-align: center;
+  width: 100%;
+  font-size: clamp(1px, 2.4vw, 3rem);
+  text-decoration: 2px underline;
+}
+
+.blog .parent-container {
+  width: 100%;
+  max-width: 100%;
+  min-height: 90%;
+  max-height: 99%;
+  min-height: 24rem;
+  background-color: #fdfcfb;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: min(3rem, 10%);
+  gap: 2rem;
+  overflow: scroll;
+}
+
+.blog .parent-container .card {
+  border: clamp(1px, 0.1vw, 0.4rem) solid #17558f;
+  border-radius: clamp(2px, 0.4vw, 1rem);
+  min-width: 23%;
+  min-height: 100%;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: min(1rem, 2%);
+  background-color: #ffffff;
+}
+
+.blog .parent-container .card .desc h3 {
+  color: #000;
+  font-size: clamp(2px, 1.2vw, 2rem);
+  text-wrap: balance;
+}
+
+.blog .parent-container .card .desc p {
+  font-size: clamp(1px, 1vw, 1.2rem);
+}
+
+.blog .parent-container .card button {
+  cursor: pointer;
+  background-color: #ffca0b;
+  color: #17558f;
+  border: none;
+  font-size: clamp(1px, 1vw, 1.2rem);
+  padding: min(1rem, 5%);
+  transition: background-color 0.2s ease-in-out;
+}
+
+.blog .parent-container .card button:hover {
+  background-color: #e2b618;
+}
+
+.blog .parent-container .card button a:link,
+.blog .parent-container .card button a:visited {
+  color: #17558f;
+  text-decoration: none;
+  position: relative;
+}
+
+.blog .parent-container .card button a::after {
+  content: "";
+  width: 0;
+  height: clamp(1px, 0.1vh, 0.2rem);
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  background-color: #17558f;
+  transition: all 0.3s ease-in-out;
+}
+
+.blog .parent-container .card button a:hover::after {
   width: 100%;
 }
