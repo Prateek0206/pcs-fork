@@ -301,7 +301,7 @@ button[data-learn-more] a:hover::after {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  overflow: scroll;
+  overflow: hidden;
   margin-right: min(0.8rem, 4%);
 }
 
@@ -355,5 +355,67 @@ button[data-learn-more] a:hover::after {
 
 section .parent-container {
   width: 100%;
-  height: 20rem;
+  height: 30rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.card {
+  height: 80%;
+  width: 20%;
+  max-height: 28rem;
+  background-color: #17558f;
+  color: white;
+  font-weight: 500;
+  font-size: clamp(2px, 2vw, 2.5rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: clamp(4px, 0.6vw, 3rem);
+  transition: all .2s ease-in;
+}
+
+.card:hover {
+  background-color: #0b3e6e;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.28);
+}
+
+.card svg {
+  height: 170%;
+  width: 100%;
+  fill: #ff8000;
+}
+
+.card button {
+  background-color: transparent;
+  border: clamp(1px, 0.2vh, 0.3rem) solid #fff;
+  padding: min(2rem, 5%);
+  font-weight: 500;
+  border-radius: 0.2rem;
+  font-size: clamp(2px, 1vw, 1.8rem);
+}
+
+.card button a:link,
+.card button a:visited {
+  color: inherit;
+  text-decoration: none;
+  position: relative;
+  color: #ff8000;
+}
+
+.card button a::after {
+  content: "";
+  width: 0;
+  height: clamp(0.5px, 0.05vw, 10px);
+  position: absolute;
+  background-color: #fff;
+  left: 0;
+  bottom: min(-0.2rem, 5%);
+  transition: width 0.2s ease-in-out;
+}
+
+.card button a:hover::after {
+  width: 100%;
 }
