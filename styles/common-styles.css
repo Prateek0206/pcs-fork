@@ -370,11 +370,5 @@ address {
 }
 
 .copyright p {
-  font-size: clamp(1px, .8vw, 1rem);
-  outline: 1px solid red;
-}
-
-
-.copyright{
-outline: 1px solid red;
+  font-size: clamp(1px, 0.8vw, 1rem);
 }
